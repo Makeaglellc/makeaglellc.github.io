@@ -1,34 +1,185 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Makeagle LLC - Trucking Services</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAK Eagle LLC - Truck Dispatching & Logistics</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #333; color: white; padding: 20px; text-align: center; }
-    main { padding: 20px; }
-    footer { background: #333; color: white; padding: 10px; text-align: center; position: fixed; width: 100%; bottom: 0; }
+    /* Reset & base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #eee;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      color: #0a84ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80') no-repeat center center/cover;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.6);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 10px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.7);
+    }
+    header p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #1f1f1f;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    nav a {
+      font-weight: 600;
+      font-size: 1.1rem;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #0a84ff;
+      color: #fff;
+    }
+
+    /* Main content */
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      flex-grow: 1;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-left: 6px solid #0a84ff;
+      padding-left: 12px;
+    }
+    section ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    section ul li {
+      background-color: #1f1f1f;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+    }
+
+    /* Contact */
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1.1rem;
+    }
+    .contact-info a {
+      display: inline-block;
+      margin-top: 15px;
+      background-color: #0a84ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      font-weight: 700;
+      transition: background-color 0.3s ease;
+    }
+    .contact-info a:hover {
+      background-color: #065bb5;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #1f1f1f;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.05);
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Makeagle LLC</h1>
-    <p>Reliable Truck Dispatching and Freight Solutions</p>
+    <h1>MAK Eagle LLC</h1>
+    <p>Driven by Grit. Powered by Experience.</p>
   </header>
+
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
   <main>
-    <h2>Our Services</h2>
-    <ul>
-      <li>24/7 Dispatch Support</li>
-      <li>Route Optimization</li>
-      <li>Carrier and Load Matching</li>
-      <li>Paperwork and Compliance Handling</li>
-    </ul>
-    <p>Contact us at <strong>info@makeaglellc.com</strong></p>
+    <section id="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>🚚 Truck Dispatching — Fast, reliable load booking and route optimization</li>
+        <li>📄 Carrier Authority Setup — MC & DOT registration, compliance management</li>
+        <li>🛡️ Compliance & Safety — ELD onboarding, drug consortium, driver files</li>
+        <li>🤝 Owner-Operator Support — Dedicated dispatch, weekly payouts, paperwork handling</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>
+        Founded in 2015, MAK Eagle LLC brings over 10 years of real trucking and dispatch experience. We are dispatcher-owned and operated with a deep understanding of owner-operator challenges and fleet management. Our mission is to help truckers and fleets grow sustainably with honest communication and dependable service.
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p>Email: <a href="mailto:sales@makeaglellc.com">sales@makeaglellc.com</a></p>
+        <p>Phone: <a href="tel:+17037057789">(703) 705-7789</a></p>
+        <a href="mailto:sales@makeaglellc.com">Get In Touch</a>
+      </div>
+    </section>
   </main>
+
   <footer>
-    &copy; 2025 Makeagle LLC
+    &copy; 2025 MAK Eagle LLC. All rights reserved.
   </footer>
 </body>
 </html>
